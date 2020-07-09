@@ -33,7 +33,7 @@ By default is *enabled*
  
  ## Checkout Cart Banners 
 Two new banners added in the checkout/cart page.  The top banner can be edited from the administration area. Login in the Admin, and click **Content** > **Elements | Blocks**.
-Look for **	Improved Cart Banner** block, and edit its content as you wish. Save the changes and refresh de cache.
+Look for **Improved Cart Banner** block, and edit its content as you wish. Save the changes and refresh de cache.
 
 The bottom banner uses a template file that gets data from a Block Class. This class can be used to get Magento models data and provide it to the template.
 
