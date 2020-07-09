@@ -1,0 +1,22 @@
+<layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <head>
+        <css src="Pablobaenas_ImprovedCart::css/improved_cart.css" rel="stylesheet" type="text/css"  />
+    </head>
+    <body>
+        <referenceContainer name="checkout.cart.container">
+            <container name="improved.cart.banner.container.top" htmlTag="div" htmlClass="improved_cart_banner"
+                       before="-">
+                <block class="Magento\Cms\Block\Block" name="improved_cart_banner">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">improved_cart_banner</argument>
+                    </arguments>
+                </block>
+            </container>
+            <container name="improved.cart.banner.other.container" htmlTag="div" htmlClass="improved_cart_banner"
+                       after="-">
+                <block class="Pablobaenas\ImprovedCart\Block\DummyBlock" name="checkout.cart.second.banner.block" after="-"
+                       template="Pablobaenas_ImprovedCart::checkout_cart_second_banner.phtml"/>
+            </container>
+        </referenceContainer>
+    </body>
+</layouts>
